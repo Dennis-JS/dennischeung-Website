@@ -1,4 +1,26 @@
+'use client';
 import React from 'react';
+import { Link } from 'react-scroll/modules';
+
+interface NavItem {
+  label: string;
+  page: string;
+}
+
+const NAV_ITEMS: Array<NavItem> = [
+  {
+    label: 'About',
+    page: 'about',
+  },
+  {
+    label: 'Experience',
+    page: 'experience',
+  },
+  {
+    label: 'Projects',
+    page: 'projects',
+  },
+];
 
 const Nav = () => {
   return (
@@ -16,26 +38,25 @@ const Nav = () => {
         </p>
         <nav className='nav hidden lg:block' aria-label='In-page jump links'>
           <ul className='mt-16 w-max'>
-            <li>
-              <a className='group flex items-center py-3 active' href='#about'>
-                <span className=' nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'></span>
-                <span className='nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:test-slate-200'>
-                  About
-                </span>
-              </a>
-              <a className='group flex items-center py-3' href='#experience'>
-                <span className=' nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'></span>
-                <span className='nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:test-slate-200'>
-                  Experience
-                </span>
-              </a>
-              <a className='group flex items-center py-3' href='#projects'>
-                <span className=' nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'></span>
-                <span className='nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:test-slate-200'>
-                  Projects
-                </span>
-              </a>
-            </li>
+            {NAV_ITEMS.map((item) => {
+              return (
+                <Link
+                  key={item.label}
+                  to={item.page}
+                  className={`group flex items-center py-3 cursor-pointer`}
+                  activeClass='active'
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  <span className=' nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'></span>
+                  <span className='nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:test-slate-200'>
+                    {item.label}
+                  </span>
+                </Link>
+              );
+            })}
           </ul>
         </nav>
       </div>
