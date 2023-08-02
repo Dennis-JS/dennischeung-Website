@@ -22,12 +22,100 @@ const AboutSection = () => {
           reliable, and scalable while providing engaging and memorable user
           experiences.
         </p>
-        <p>
+        <p className='mb-4'>
           When I&#x27;m not busy with my tech adventures, I have a few hobbies
           to keep me grounded. You&#x27;ll often find me biking with friends,
           keeping fit with Crossfit, or traveling with my camera, always ready
           to capture those special moments.
         </p>
+        <p className='mb-4'>I have experience in the following technologies:</p>
+        <ul className=' flex flex-wrap'>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              JavaScript
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              TypeScript
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              React
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              Next.js
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              Node
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              Express
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              Redux
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              Python
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              AWS
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              Docker
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              Redis
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              PostgreSQL
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              MongoDB
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              GraphQL
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              TailwindCSS
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              HTML5
+            </div>
+          </li>
+          <li className='mr-1.5 mt-2'>
+            <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+              CSS
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   );
